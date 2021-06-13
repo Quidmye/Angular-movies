@@ -1,0 +1,17 @@
+.genre-list{
+  padding: 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.genre-list .genre-item{
+  background-color: #d0d0d0;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  border-radius: 15%;
+  cursor: pointer;
+}
+.genre-list .selected-genre{
+  background-color: #6d6d6d;
+  color: #fff;
+}

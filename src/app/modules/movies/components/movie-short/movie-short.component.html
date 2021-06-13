@@ -1,0 +1,8 @@
+<div class="short-card">
+  <a routerLink="{{movie.id}}"><img *ngIf="poster" src="https://image.tmdb.org/t/p/w500/{{ poster }}"></a>
+  <a routerLink="{{movie.id}}"> <h2>{{ title }}</h2></a>
+  <h3>{{ genre_names }}</h3>
+  <p>{{ overview }}</p>
+  <hr>
+  <app-stars [movieId]="movie.id"></app-stars>
+</div>

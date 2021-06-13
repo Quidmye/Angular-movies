@@ -1,0 +1,23 @@
+<div class="paginator">
+  <div class="paginator-prev">
+    <div class="paginator-link" (click)="setPage(1)">FIRST</div>
+    <div *ngIf="page > 1 else prevdisabled" class="paginator-link" (click)="setPage(page-1)">PREV</div>
+    <ng-template #prevdisabled>
+    <div class="paginator-link paginator-disabled">PREV</div>
+    </ng-template>
+  </div>
+  <div class="paginator-pages">
+    <div [ngClass]="['paginator-link', page === i ? 'paginator-active' : '']" *ngFor="let i of list" (click)="setPage(i)">{{ i }}</div>
+  </div>
+  <div class="paginator-next">
+    <div *ngIf="page < total else nextdisabled" class="paginator-link" (click)="setPage(page+1)">NEXT</div>
+    <ng-template #nextdisabled>
+      <div class="paginator-link paginator-disabled">NEXT</div>
+    </ng-template>
+    <div *ngIf="page < total else lastdisabled" class="paginator-link" (click)="setPage(total)">LAST</div>
+    <ng-template #lastdisabled>
+      <div class="paginator-link paginator-disabled" (click)="setPage(total)">LAST</div>
+    </ng-template>
+
+  </div>
+</div>

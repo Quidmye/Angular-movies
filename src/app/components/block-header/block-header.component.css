@@ -1,0 +1,67 @@
+
+.header{
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #cdcdcd;
+  align-items: center;
+  padding: 10px 15%;
+}
+.header .search-bar form{
+  width: 100%;
+}
+.header .search-bar{
+  display: flex;
+  margin: 0 10%;
+  position: relative;
+  flex: 1 1 auto;
+}
+.header .search-bar input{
+  width: 80%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #e7e7e7;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.header .search-bar button[type=submit]{
+  content: '';
+  background-size: 35px 35px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  position: absolute;
+  left: calc(80% - 17.5px);
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png");
+}
+.header .user-bar{
+  display: flex;
+  align-items: center;
+}
+.header .user-bar img{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+}
+.header .user-bar h3{
+  color: #cdcdcd;
+}
+.theme-toggler{
+  margin: 0 2rem;
+  padding: 0.5rem;
+}
+.light .theme-toggler{
+  background-color: black;
+  color: white;
+}
+.dark .theme-toggler{
+  background-color: white;
+  color: #000000;
+}
+.header.dark{
+  background-color: #3e3e3e;
+}
+.header.dark .logo a {
+  color: #fff;
+}

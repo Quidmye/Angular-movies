@@ -1,0 +1,12 @@
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  margin: 0.50rem;
+}
+.stars > div{
+  cursor: pointer;
+}
+.stars > div:hover ~ div, .stars div:hover, .stars > div.rated{
+  color: #ffff00;
+}

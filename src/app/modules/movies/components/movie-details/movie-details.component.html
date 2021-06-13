@@ -1,0 +1,16 @@
+<div class="movie-details">
+  <div class="poster">
+    <img src="https://image.tmdb.org/t/p/w500/{{movie?.poster_path}}">
+  </div>
+  <div class="info">
+    <h1>{{ movie?.title }}</h1>
+    <h3>{{ movie?.tagline }}</h3>
+    <h3><span *ngFor="let genre of movie?.genres">{{ genre.name }}</span></h3>
+    <ul>
+      <li><h4>Release:</h4> {{ movie?.release_date }}</li>
+      <li><h4>Revenue:</h4> {{ movie?.revenue?.toLocaleString() }}</li>
+    </ul>
+    <p>{{ movie?.overview }}</p>
+    <app-stars [movieId]="movie?.id"></app-stars>
+  </div>
+</div>

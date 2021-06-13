@@ -1,0 +1,15 @@
+<div class="header {{theme}}">
+  <div class="logo">
+    <a routerLink="/">LOGOTYPE</a>
+  </div>
+  <div class="search-bar">
+    <form [formGroup]="search" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="query" placeholder="Search...">
+      <button type="submit"></button>
+    </form>
+  </div>
+  <div class="user-bar">
+    <img src="https://image.made-in-china.com/3f2j10sfRGFzqdEHcn/Fashion-Solid-Color-Lady-Bikini-Set-Sexy-Bikini-Hot-Girl.webp"> <h3>User Best</h3>
+  </div>
+  <button class="theme-toggler" (click)="toggleThemeEmit()">{{ theme === 'dark' ? 'Go Light' : 'Go Dark' }}</button>
+</div>

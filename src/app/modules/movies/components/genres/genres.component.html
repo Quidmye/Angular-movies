@@ -1,0 +1,5 @@
+<div class="genre-list">
+  <div [ngClass]="['genre-item', selectedGenres.includes(genre.id) ? 'selected-genre' : '']" *ngFor="let genre of genres" (click)="toggleGenre(genre.id)">
+    {{ genre.name }}
+  </div>
+</div>

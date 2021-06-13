@@ -1,0 +1,4 @@
+<div class="movies-list">
+  <app-movie-short *ngFor="let movie of movies" [movie]="movie"></app-movie-short>
+</div>
+<app-paginator [page]="page" [total]="total_pages"></app-paginator>

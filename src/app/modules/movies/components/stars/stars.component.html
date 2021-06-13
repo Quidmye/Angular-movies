@@ -1,0 +1,3 @@
+<div class="stars">
+  <div [ngClass]="[currentRating >= i ? 'rated' : '']" *ngFor="let i of stars" (click)="setRating(i)">&#9733;</div>
+</div>

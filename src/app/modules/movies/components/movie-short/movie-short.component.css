@@ -1,0 +1,15 @@
+.short-card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px #000000;
+  color: #717171;
+}
+.short-card h3{
+  word-wrap: anywhere;
+}
+.short-card h2,h3,p{
+  margin: 1rem;
+}
+.short-card img{
+  max-width: 100%;
+}

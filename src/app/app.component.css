@@ -1,0 +1,8 @@
+.container{
+  border-top: 1px solid #bdbdbd;
+  background-color: #f0efed;
+  height: 100%;
+}
+.container.dark{
+  background-color: #3e3e3e;
+}

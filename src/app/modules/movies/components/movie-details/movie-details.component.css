@@ -1,0 +1,21 @@
+.movie-details{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 15%;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px #000000;
+  color: #828282;
+}
+.movie-details .info{
+  padding: 2rem;
+}
+.movie-details .info h3 span{
+  margin-right: 1rem;
+}
+.movie-details .info ul{
+  list-style: none;
+}
+.movie-details .info ul li h4{
+  display: inline-block;
+}

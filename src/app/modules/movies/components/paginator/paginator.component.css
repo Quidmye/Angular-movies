@@ -1,0 +1,20 @@
+.paginator, .paginator-prev, .paginator-next, .paginator-pages{
+  display: flex;
+}
+.paginator{
+  margin: 1rem 15%;
+  justify-content: space-between;
+}
+.paginator-link{
+  background-color: #cdcdcd;
+  padding: 0.25rem;
+  border-radius: 15%;
+  margin: 0 0.15rem;
+}
+.paginator-disabled{
+  color: #bdbdbd;
+}
+.paginator-active{
+  background-color: #6d6d6d;
+  color: #fff;
+}
